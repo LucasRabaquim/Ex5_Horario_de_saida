@@ -5,7 +5,7 @@ public class Lucas_Rafa_05 {
        Scanner entrada = new Scanner(System.in);
        System.out.print("Digite seu horário de entrada: ");
        double hora = entrada.nextDouble() + 6;
-       hora = (hora >= 24)?(hora - 24):hora;
+       hora = hora % 24;
        System.out.print("O horário de saida é: " + hora +"h" );
     }   
 }
